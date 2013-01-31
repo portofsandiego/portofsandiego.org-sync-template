@@ -6,6 +6,10 @@
 * @license   http://www.gnu.org/licenses/gpl.html GNU/GPL
 */
 
+/* Modifications by Glenn A. Batuyong. See yoo_sync original and diff in case of updates
+See section below under // render module
+----------------------------------------------------------------------------------------------------*/
+
 // init vars
 $id				= $module->id;
 $position		= $module->position;
@@ -162,5 +166,6 @@ if ($module->menu) {
 }
 
 // render module
+if (!empty($content)) /* custom code for advanced media manager */
 echo $this->render("modules/templates/{$template}", compact('style', 'badge', 'showtitle', 'title', 'content', 'dropdownwidth'));
 
