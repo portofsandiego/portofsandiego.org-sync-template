@@ -1,32 +1,15 @@
-@import url(../../green/css/style.css);
+@import url(../../lightblue/css/style.css);
 /* Overrides to default YOOtheme Sync GREEN style */
 /* To change the overall trim color style, change the @IMPORT statement path */
 /* Modifications by Glenn A. Batuyong, Port of San Diego */
 
-/* Responsive video embeds */
-/* The video container */
-.rvideo {
-  height: 0;
-  padding-top: 25px;
-  padding-bottom: 67.5%;
-  margin-bottom: 10px;
-  position: relative;
-  overflow: hidden;
-}
- 
-.rvideo.widescreen {
-  padding-bottom: 57.25%;
-}
- 
-.rvideo.vimeo {
-  padding-top: 0;
+/* Base colors etc
+----------------------------------------------------------------------------------------------------*/
+body#page {
+	background: url('http://www.portofsandiego.org/templates/portsd2008/images/mainwrap-top.jpg') repeat-x top left;
+	background-color: #41607F;
 }
 
-/* The video embed itself */
-.rvideo embed, .rvideo iframe, .rvideo object, .rvideo video {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
+/* Adjustments to responsive design BREAKPOINTS
+(These are only necessary if Port continues to keep so many menus all on one level across top)
+----------------------------------------------------------------------------------------------------*/

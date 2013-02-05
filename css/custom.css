@@ -14,3 +14,32 @@ ul.twocolumn {
     column-gap: 20px;
     width: 100%;
 }
+
+/* Responsive video embeds
+----------------------------------------------------------------------------------------------------*/
+/* The video container */
+.rvideo {
+  height: 0;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+ 
+.rvideo.widescreen {
+  padding-bottom: 57.25%;
+}
+ 
+.rvideo.vimeo {
+  padding-top: 0;
+}
+
+/* The video embed itself */
+.rvideo embed, .rvideo iframe, .rvideo object, .rvideo video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
