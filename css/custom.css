@@ -2,3 +2,44 @@
 /* Overrides to default YOOtheme Sync custom declarations */
 /* Includes features and style additions not previously declared  */
 /* By Glenn A. Batuyong, Port of San Diego */
+
+/* Two-column lists
+----------------------------------------------------------------------------------------------------*/
+ul.twocolumn {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    width: 100%;
+}
+
+/* Responsive video embeds
+----------------------------------------------------------------------------------------------------*/
+/* The video container */
+.rvideo {
+  height: 0;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+ 
+.rvideo.widescreen {
+  padding-bottom: 57.25%;
+}
+ 
+.rvideo.vimeo {
+  padding-top: 0;
+}
+
+/* The video embed itself */
+.rvideo embed, .rvideo iframe, .rvideo object, .rvideo video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
