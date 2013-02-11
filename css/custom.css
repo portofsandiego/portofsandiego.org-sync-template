@@ -3,6 +3,15 @@
 /* Includes features and style additions not previously declared  */
 /* By Glenn A. Batuyong, Port of San Diego */
 
+/* Logo override
+----------------------------------------------------------------------------------------------------*/
+.custom-logo { 
+	width: 163px;
+	height: 128px;
+	background: url(../images/logo-sdupd.png) 50% 50% no-repeat;
+	background-size: contain;
+}
+
 /* Two-column lists
 ----------------------------------------------------------------------------------------------------*/
 ul.twocolumn {
@@ -42,4 +51,13 @@ ul.twocolumn {
   width: 100%;
   height: 100%;
   position: absolute;
+}
+
+/* Legacy styles from 2008 template
+(deprecated but used for backward compatibility with ancient press releases, category descriptions)
+----------------------------------------------------------------------------------------------------*/
+img.IMAGE-float-left {
+	float: left;
+	margin: 0 10px 10px 0;
+	border: 0;
 }
