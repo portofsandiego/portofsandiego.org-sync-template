@@ -1,5 +1,5 @@
-@import url(../../lightblue/css/style.css);
-/* Overrides to default YOOtheme Sync GREEN style */
+@import url(../../../css/style.css);
+/* Overrides to default YOOtheme Sync default style */
 /* To change the overall trim color style, change the @IMPORT statement path */
 /* Modifications by Glenn A. Batuyong, Port of San Diego */
 
@@ -10,6 +10,8 @@ body#page {
 	background-color: #41607F;
 }
 
-/* Adjustments to responsive design BREAKPOINTS
-(These are only necessary if Port continues to keep so many menus all on one level across top)
-----------------------------------------------------------------------------------------------------*/
+.social-icons li a {
+	background-image: none;
+	width: auto;
+	height: auto;
+}
