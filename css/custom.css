@@ -14,7 +14,7 @@
 
 /* Two-column lists
 ----------------------------------------------------------------------------------------------------*/
-ul.twocolumn {
+ul.twocolumn, ol.twocolumn {
     -moz-column-count: 2;
     -moz-column-gap: 20px;
     -webkit-column-count: 2;
@@ -22,6 +22,7 @@ ul.twocolumn {
     column-count: 2;
     column-gap: 20px;
     width: 100%;
+    list-style-position: inside; /* bugfix for hidden bullets/numbers */
 }
 
 /* Responsive video embeds
