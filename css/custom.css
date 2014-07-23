@@ -43,3 +43,50 @@ ul.twocolumn {
   height: 100% !important;
   position: absolute;
 }
+
+/* responsive data tables, thank you NPR visuals team */
+@media screen and (max-width: 640px) {
+    table, tbody {
+		display: block !important;
+		width: 100%;
+	}
+	caption {
+		display: block !important;
+		width: 100% !important;
+	}
+	thead {
+		display: none !important;
+	}
+	table tr, table th, table td {
+		display: block !important;
+		padding: 0 !important;
+		text-align: left !important;
+		white-space: normal !important;
+	}
+	table tr {
+		border-bottom: 1px solid #eee !important;
+		padding-bottom: 11px !important;
+		margin-bottom: 11px !important;
+	}
+	table th[data-title]:before, table td[data-title]:before {
+		content: attr(data-title)":\00A0" !important;
+		font-weight: bold !important;
+	}
+	table td {
+		border: none !important;
+		margin-bottom: 6px !important;
+		color: #444 !important;
+	}
+	table td:empty {
+		display: none !important;
+	}
+	table td:first-child {
+		font-size: 14px !important;
+		font-weight: bold !important;
+		margin-bottom: 6px !important;
+		color: #333 !important;
+	}
+	table td:first-child:before {
+		content:'' !important;
+	}
+}
