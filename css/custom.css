@@ -45,6 +45,14 @@ ul.twocolumn {
 }
 
 /* responsive data tables, thank you NPR visuals team */
+
+table.zebra caption {
+	font-size: 14px !important;
+	font-weight: bold !important;
+	color: #4C515E !important;
+	margin-bottom: 5px !important;
+}
+
 @media screen and (max-width: 640px) {
     table, tbody {
 		display: block !important;
@@ -53,6 +61,8 @@ ul.twocolumn {
 	caption {
 		display: block !important;
 		width: 100% !important;
+		font-size: 13px !important;
+		font-weight: bold !important;
 	}
 	thead {
 		display: none !important;
