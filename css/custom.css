@@ -3,15 +3,51 @@
 /* Includes features and style additions not previously declared  */
 /* By Glenn A. Batuyong, Port of San Diego */
 
+/* Logo override
+----------------------------------------------------------------------------------------------------*/
+.custom-logo { 
+	width: 136px;
+	height: 110px;
+	background: url(../images/logo-sdupd.png) 50% 50% no-repeat;
+	background-size: contain;
+}
+
 /* Two-column lists
 ----------------------------------------------------------------------------------------------------*/
-ul.twocolumn {
+ul.twocolumn, ol.twocolumn {
+    -moz-column-count: 2;
+    -moz-column-gap: 5px;
+    -ms-column-count: 2;
+    -ms-column-gap: 5px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 5px;
+    column-count: 2;
+    column-gap: 5px;
+    list-style-position: inside; /* bugfix for hidden bullets/numbers */
+}
+
+#awwdates
+{
     -moz-column-count: 2;
     -moz-column-gap: 5px;
     -webkit-column-count: 2;
     -webkit-column-gap: 5px;
     column-count: 2;
-    column-gap: 20px;
+    column-gap: 5px;
+}
+#awwdates .column /* Needed for Columnizer, Modernizr IE workaround */
+{
+   padding-right: 5px;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+
+/* Minor tweaks for readability
+----------------------------------------------------------------------------------------------------*/
+article.item li {
+  margin-bottom: 1%
 }
 
 /* Responsive video embeds
@@ -43,59 +79,11 @@ ul.twocolumn {
   position: absolute;
 }
 
-/* responsive data tables, thank you NPR visuals team */
-
-table.zebra caption {
-	font-size: 14px !important;
-	font-weight: bold !important;
-	color: #4C515E !important;
-	margin-bottom: 5px !important;
-}
-
-@media screen and (max-width: 640px) {
-    table, tbody {
-		display: block !important;
-		width: 100%;
-	}
-	caption {
-		display: block !important;
-		width: 100% !important;
-		font-size: 13px !important;
-		font-weight: bold !important;
-	}
-	thead {
-		display: none !important;
-	}
-	table tr, table th, table td {
-		display: block !important;
-		padding: 0 !important;
-		text-align: left !important;
-		white-space: normal !important;
-	}
-	table tr {
-		border-bottom: 1px solid #eee !important;
-		padding-bottom: 11px !important;
-		margin-bottom: 11px !important;
-	}
-	table th[data-title]:before, table td[data-title]:before {
-		content: attr(data-title)":\00A0" !important;
-		font-weight: bold !important;
-	}
-	table td {
-		border: none !important;
-		margin-bottom: 6px !important;
-		color: #444 !important;
-	}
-	table td:empty {
-		display: none !important;
-	}
-	table td:first-child {
-		font-size: 14px !important;
-		font-weight: bold !important;
-		margin-bottom: 6px !important;
-		color: #333 !important;
-	}
-	table td:first-child:before {
-		content:'' !important;
-	}
+/* Legacy styles from 2008 template
+(deprecated but used for backward compatibility with ancient press releases, category descriptions)
+----------------------------------------------------------------------------------------------------*/
+img.IMAGE-float-left {
+	float: left;
+	margin: 0 10px 10px 0;
+	border: 0;
 }
