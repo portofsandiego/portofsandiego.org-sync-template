@@ -46,7 +46,7 @@ ul.twocolumn, ol.twocolumn {
 
 /* Minor tweaks for readability
 ----------------------------------------------------------------------------------------------------*/
-article.item li {
+article.item li, div.description li {
   margin-bottom: 1%
 }
 
